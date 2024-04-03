@@ -1,0 +1,26 @@
+  [
+    {
+      "id": 1,
+      "imgUrl": "/public/pictures/img carousel/img1.jpg"
+    },
+    {
+      "id": 2,
+      "imgUrl": "/public/pictures/img carousel/img2.jpg"
+    },
+    {
+      "id": 3,
+      "imgUrl": "/public/pictures/img carousel/img3.jpg"
+    },
+    {
+      "id": 4,
+      "imgUrl": "/public/pictures/img carousel/img4.jpg"
+    },
+    {
+      "id": 5,
+      "imgUrl": "/public/pictures/img carousel/img5.jpg"
+    },
+    {
+      "id": 6,
+      "imgUrl": "/public/pictures/img carousel/img6.jpg"
+    }
+  ]

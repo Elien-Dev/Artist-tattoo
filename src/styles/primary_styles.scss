@@ -1,0 +1,47 @@
+// -------------------------- use partials
+@use 'variables' as v;
+@use 'home';
+@use 'mixins';
+
+// component slider
+
+// -------------------------- Export fonts family
+
+  // first-font
+@font-face {
+  font-family: 'AlumniSansPinstripe';
+  src: url(../../public/fonts-family/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+}
+
+  // 2nth-font
+@font-face {
+  font-family: 'Ranga';
+  src: url(../../public/fonts-family/Ranga/Ranga-Regular.ttf);
+}
+
+// -------------------------- Native HTML tags
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+
+  font-family: 'AlumniSansPinstripe';
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  min-width: 375px;
+  max-width: 1560px;
+  margin: auto;
+
+}
+
+img {
+  width: 100%;
+  height: max-content;
+}

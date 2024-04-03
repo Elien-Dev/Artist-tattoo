@@ -1,0 +1,15 @@
+@use 'variables' as v;
+
+@mixin icons {
+  color: v.$primary-color;
+  display: flex;
+  font-size: 20px;
+  transition: .3s ease-in;
+}
+
+@mixin color-cards {
+  background: -webkit-linear-gradient(top right, v.$color-card-1, v.$color-card-2, v.$color-card-1, v.$color-card-2, v.$color-card-1);
+  border-radius: 20px;
+  border: 1px solid v.$color-border;
+  box-shadow: 1px 3px 8px 1px v.$color-card-2;
+}
