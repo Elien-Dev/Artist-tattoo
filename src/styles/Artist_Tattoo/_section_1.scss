@@ -1,0 +1,157 @@
+@use '../variables' as v;
+@use '../mixins';
+
+.section-art {
+  margin: auto;
+  margin-top: 4px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.perfil-art{
+  @include mixins.bg-cards;
+  background: -webkit-linear-gradient(v.$color-nth-4, v.$color-nth-3, v.$color-nth-3);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 520px;
+  overflow: scroll;
+  max-width: 720px;
+  margin: 20px auto;
+  align-content: space-around;
+  box-shadow: 1px 2px 5px 1px #1b1b1b;
+}
+
+.container {
+  @include mixins.color-cards;
+  padding: 12px;
+  margin: 16px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  transition: .4s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.02);
+  border-color: v.$primary-color;
+}
+.content-img{
+  display: block;
+  border: 8px solid v.$primary-color;
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  margin-right: 12px;
+  overflow: hidden;
+  clip-path: polygon(64% 8%, 100% 38%, 83% 89%, 18% 100%, 0 0);
+  &__perfil {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.content-art {
+  background: rgba(0, 0, 0, 0.286);
+  border: 1px solid v.$primary-color;
+  color: v.$color-text;
+  border-radius: 8px;
+  padding: 10px;
+  width: 65%;
+  margin: auto;
+}
+
+// asection of video tattoo artist
+
+.live {
+  background: -webkit-linear-gradient(bottom right, #ffbb00, #fff200);
+  box-shadow: 1px 2px 5px 1px #1b1b1b;
+  border-radius: 15px;
+  margin: 0px auto 12px;
+  padding: 10px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 720px;
+  height: 230px;
+}
+
+// Description_Artist_Tattoo
+
+.description-artist {
+  // border: 1px solid red;
+  padding: 0 20px;
+  &__name {
+    font-size: 35px;
+    // border: 1px solid violet;
+    margin-bottom: 5px;
+    width: max-content;
+  }
+  &__avg {
+    @include mixins.bg-cards;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 35px;
+    width: max-content;
+    background: #00000043;
+  }
+
+  &__content-img {
+    border: 2px solid rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    height: 425px;
+    &__Bgimg {
+      // border: 1px solid blue;
+      position: absolute;
+      width: 100%;
+      min-width: 375px;
+      max-width: 560px;
+      height: 380px;
+    }
+    &__img {
+      filter: drop-shadow(6px 6px 3px v.$primary-color);
+      object-fit: contain;
+      width: 100%;
+      max-height: 475px;
+    }
+  }
+
+  &__datils{
+    // border: 1px solid green;
+    margin:40px auto 40px;
+    font-size: 16px;
+
+    &__esp {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.find-me-in {
+  background: v.$color-nth-3;
+  align-content: center;
+  // border: 2px solid yellow;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto 40px;
+  padding: 5px 10px;
+  width: 280px;
+  &__li {
+    // border: 2px solid blue;
+    padding: 0 10px;
+    &--a{
+      display: flex;
+      // border: 2px solid red;
+      color: v.$primary-color;
+      font-size: 35px
+    }
+  }
+}

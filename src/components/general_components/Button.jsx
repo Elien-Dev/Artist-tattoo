@@ -1,12 +1,11 @@
 import { CiTextAlignRight } from "react-icons/ci";
 
-const Button = ( {onModal} ) => {
+const Button = ( {opneModal} ) => {
+  return (
+    <button onClick={opneModal} className="btn-main" >
+      <CiTextAlignRight id={"btn"}/>
+    </button>
+  );
+};
 
-    return (
-      <button className="btn-main" onClick={onModal}>
-        <CiTextAlignRight id={'btn'}/>
-      </button>
-    )
-  }
-
-export {Button}
+export { Button };

@@ -26,7 +26,6 @@ export default function Home() {
         <Maker_tattoo />
         <Maker_tattoo />
         <Maker_tattoo />
-        <Maker_tattoo />
       </section>
 
       <section className="section-3">

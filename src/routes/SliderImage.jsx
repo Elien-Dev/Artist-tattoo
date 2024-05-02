@@ -30,6 +30,8 @@ export default function Sliderimage() {
         showBullets={true}
         autoPlay={true}
       />
+
+      <a>ir a la galeria</a>
     </div>
   );
 }

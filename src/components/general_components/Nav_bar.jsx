@@ -1,27 +1,21 @@
 import { Link } from "react-router-dom";
-
 import { TfiClose } from "react-icons/tfi";
 
-
-export default function Nav_bar({ isOpen, closeModal }) {
-  if (isOpen === false) return null;
-
+export default function Nav_bar( {active, closeModal} ) {
+  // if(!isOpen) return false
   return (
-    <div className="main">
-            <TfiClose className="main__btn-close" onClick={closeModal}>
-      </TfiClose>
+
+    <div className={active ? 'modal__on' : 'main'}>
+      <TfiClose className="main__btn-close" onClick={closeModal}/>
       <nav>
         <ul className="main__nav">
           <li className="main__nav--li">
-            <Link className="main__nav--link" to={"/"}>
+            <Link className="main__nav--link" to={"/"}> 
               Inicio
             </Link>
           </li>
           <li className="main__nav--li">
-            <Link
-              className="main__nav--link"
-              to={'/artist-tattoo'}
-            >
+            <Link className="main__nav--link" to={"/artist-tattoo"}>
               Artist Tattoo
             </Link>
           </li>

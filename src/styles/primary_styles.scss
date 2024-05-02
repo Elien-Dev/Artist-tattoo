@@ -1,6 +1,8 @@
 // -------------------------- use partials
 @use 'variables' as v;
 @use 'home';
+@use 'Artist_Tattoo/section_1';
+@use '_Services/services-styles';
 @use 'mixins';
 
 // component slider
@@ -39,6 +41,11 @@ body {
   max-width: 1560px;
   margin: auto;
 
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Ranga';
+  font-weight: 200;
 }
 
 img {
